@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aboreto"
+            android:text="Kalkulator odległości na miary anglosaskie"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="podaj odleglośc [m]" />
+
+            <EditText
+                android:id="@+id/etOdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wybierz miarę" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMilaM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mila morska" />
+
+            <RadioButton
+                android:id="@+id/rbMilaL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mila lądowa" />
+
+            <RadioButton
+                android:id="@+id/rbJard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jard" />
+
+            <RadioButton
+                android:id="@+id/rbStopa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stopa" />
+
+            <RadioButton
+                android:id="@+id/rbCal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cal" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnPolicz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Policz odległośc" />
+
+        <TextView
+            android:id="@+id/tvWynik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
